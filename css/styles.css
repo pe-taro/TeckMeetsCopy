@@ -1,0 +1,285 @@
+@import url(styles.css) screen and (min-width: 1024px);
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+.menu {
+  display: none; }
+
+.menu-btn {
+  display: none; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  color: white; }
+  header #nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%; }
+    header #nav :hover {
+      cursor: pointer; }
+    header #nav .logo {
+      margin: auto 0;
+      font-size: 20px;
+      opacity: 0.9; }
+      header #nav .logo .logo1 {
+        font-size: 25px;
+        letter-spacing: 1px; }
+    header #nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end; }
+      header #nav ul li {
+        opacity: 0.9;
+        font-size: 1vw;
+        margin: auto 10px; }
+        header #nav ul li a {
+          text-decoration: none;
+          color: white; }
+        header #nav ul li span {
+          background-color: #f70;
+          padding: 1vh;
+          letter-spacing: 2px; }
+      header #nav ul a:hover {
+        background: #666;
+        cursor: pointer; }
+  header .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 8vh;
+    background: rgba(5, 5, 5, 0.3); }
+
+.sc1 {
+  height: 670px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../img/sc1-1.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.sc1-con {
+  height: 540px;
+  display: flex;
+  align-items: center; }
+
+.sc1-contx {
+  margin: 0 auto; }
+  .sc1-contx h1 {
+    font-size: 64px;
+    font-weight: normal;
+    color: white;
+    margin: 0 auto;
+    letter-spacing: 4px;
+    opacity: 0.9;
+    text-align: center; }
+  .sc1-contx p {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    opacity: 0.6; }
+
+.sc2 {
+  background-color: #f70;
+  padding: 72px 120px 72px 120px; }
+  .sc2 .sc2-con {
+    display: flex;
+    justify-content: center; }
+    .sc2 .sc2-con .sc2-contx h2 {
+      font-size: 44px;
+      margin: 0 7vh 0 0; }
+    .sc2 .sc2-con .sc2-contx .sc2-contx2 {
+      display: flex; }
+      .sc2 .sc2-con .sc2-contx .sc2-contx2 img {
+        width: 44px;
+        height: 16px;
+        margin: 0 0 0 8px; }
+      .sc2 .sc2-con .sc2-contx .sc2-contx2 .sc2-contx3 {
+        padding-left: 8px; }
+        .sc2 .sc2-con .sc2-contx .sc2-contx2 .sc2-contx3 p {
+          display: inline-block;
+          width: 270px;
+          height: 100px;
+          font-size: 14px;
+          margin-top: 0;
+          margin-bottom: 16px; }
+          .sc2 .sc2-con .sc2-contx .sc2-contx2 .sc2-contx3 p .mobile {
+            display: none; }
+  .sc2 img {
+    width: 400px;
+    display: block;
+    height: 280px;
+    margin-top: 4px;
+    object-fit: cover; }
+  .sc2 .sc2-contx4 {
+    display: block;
+    padding-left: 8%;
+    width: 100%;
+    font-size: 14px; }
+    .sc2 .sc2-contx4 span {
+      display: none; }
+
+.sc3 {
+  text-align: center; }
+  .sc3 h2 {
+    font-size: 44px;
+    margin: 60px 0 12px 0; }
+  .sc3 p {
+    font-size: 16px;
+    margin: 0 0 40px 0; }
+  .sc3 .sc3-cons {
+    width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: "... ....... ...... ....... ...... ....... ..." auto "... item1-1 ...... item1-2 ...... item1-3 ..." 1fr "... ....... ...... ....... ...... ....... ..." 70px "... item1-4 ...... item1-5 ...... item1-6 ..." 1fr "... ....... ...... ....... ...... ....... ..." 70px / 1fr 1fr 50px 1fr 50px 1fr 1fr; }
+    .sc3 .sc3-cons .sc3-con1 {
+      grid-area: item1-1; }
+    .sc3 .sc3-cons .sc3-con2 {
+      grid-area: item1-2; }
+    .sc3 .sc3-cons .sc3-con3 {
+      grid-area: item1-3; }
+    .sc3 .sc3-cons .sc3-con4 {
+      grid-area: item1-4; }
+    .sc3 .sc3-cons .sc3-con5 {
+      grid-area: item1-5; }
+    .sc3 .sc3-cons .sc3-con6 {
+      grid-area: item1-6; }
+    .sc3 .sc3-cons img {
+      width: 280px; }
+    .sc3 .sc3-cons h3 {
+      display: block;
+      text-align: left;
+      width: 280px;
+      margin: 0 auto;
+      padding: 24px 0 20px 0;
+      font-size: 20px; }
+    .sc3 .sc3-cons p {
+      display: block;
+      text-align: left;
+      font-size: 16px;
+      width: 280px;
+      margin: 0 auto;
+      line-height: 28px; }
+
+.sc4 {
+  height: 320px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../img/sc4-1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0; }
+  .sc4 p {
+    color: white;
+    text-align: center;
+    margin: 0;
+    opacity: 0.6; }
+  .sc4 a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 308px;
+    height: 88px;
+    background-color: #f70; }
+    .sc4 a span {
+      font-size: 30px;
+      position: relative;
+      bottom: 4px;
+      right: 12px; }
+  .sc4 .etc {
+    display: none; }
+
+.sc5 {
+  background-color: #f70; }
+  .sc5 .sc5-h {
+    width: 1024px;
+    margin: 0 auto; }
+  .sc5 h2 {
+    font-size: 40px;
+    padding: 60px 0 0 170px; }
+    .sc5 h2 span {
+      display: none; }
+  .sc5 .sc5-cons {
+    width: 1024px;
+    height: 630px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    grid-template: "... ....... ....... ....... ..." 20px "... item2-1 ....... item2-2 ..." 184px "... ....... ....... ....... ..." 70px "... item2-3 ....... item2-4 ..." 184px "... ....... ....... ....... ..." auto / auto 320px 30px 320px auto; }
+    .sc5 .sc5-cons .sc5-con1 {
+      grid-area: item2-1; }
+    .sc5 .sc5-cons .sc5-con2 {
+      grid-area: item2-2; }
+    .sc5 .sc5-cons .sc5-con3 {
+      grid-area: item2-3; }
+    .sc5 .sc5-cons .sc5-con4 {
+      grid-area: item2-4; }
+    .sc5 .sc5-cons .sc5-deco {
+      display: flex; }
+      .sc5 .sc5-cons .sc5-deco img {
+        width: 40px;
+        height: 16px;
+        transform: scale(1, -1);
+        position: relative;
+        top: 30px; }
+      .sc5 .sc5-cons .sc5-deco h4 {
+        letter-spacing: 1px; }
+    .sc5 .sc5-cons .sc5-contx {
+      display: flex; }
+      .sc5 .sc5-cons .sc5-contx img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover; }
+      .sc5 .sc5-cons .sc5-contx p {
+        width: 200px;
+        height: 120px;
+        font-size: 13px;
+        letter-spacing: 2px;
+        margin: 0;
+        padding-left: 20px; }
+
+footer {
+  height: 240px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../img/ft1-1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  color: white;
+  display: flex;
+  justify-content: space-between; }
+  footer .mobilefoot {
+    display: none; }
+  footer .logo {
+    padding-left: 60px;
+    font-size: 20px;
+    opacity: 0.9;
+    display: inline-block; }
+    footer .logo:hover {
+      cursor: pointer; }
+    footer .logo .logo1 {
+      font-size: 25px;
+      letter-spacing: 1px; }
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0.8;
+    margin: 4px 60px 0 0;
+    font-size: 1vw; }
+    footer ul a {
+      text-decoration: none;
+      color: white; }
+    footer ul li {
+      padding: 0 10px; }
+
+/*# sourceMappingURL=styles.css.map */
